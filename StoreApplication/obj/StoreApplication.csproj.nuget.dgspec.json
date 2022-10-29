@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\a.trambovetskyi\\source\\repos\\StoreApplication\\StoreApplication\\StoreApplication.csproj": {}
+    "C:\\Users\\depry\\source\\repos\\Ecommerce\\Ecommerce\\StoreApplication\\StoreApplication.csproj": {}
   },
   "projects": {
-    "C:\\Users\\a.trambovetskyi\\source\\repos\\StoreApplication\\StoreApplication\\StoreApplication.csproj": {
+    "C:\\Users\\depry\\source\\repos\\Ecommerce\\Ecommerce\\StoreApplication\\StoreApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\a.trambovetskyi\\source\\repos\\StoreApplication\\StoreApplication\\StoreApplication.csproj",
+        "projectUniqueName": "C:\\Users\\depry\\source\\repos\\Ecommerce\\Ecommerce\\StoreApplication\\StoreApplication.csproj",
         "projectName": "StoreApplication",
-        "projectPath": "C:\\Users\\a.trambovetskyi\\source\\repos\\StoreApplication\\StoreApplication\\StoreApplication.csproj",
-        "packagesPath": "C:\\Users\\a.trambovetskyi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\a.trambovetskyi\\source\\repos\\StoreApplication\\StoreApplication\\obj\\",
+        "projectPath": "C:\\Users\\depry\\source\\repos\\Ecommerce\\Ecommerce\\StoreApplication\\StoreApplication.csproj",
+        "packagesPath": "C:\\Users\\depry\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\depry\\source\\repos\\Ecommerce\\Ecommerce\\StoreApplication\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\a.trambovetskyi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\depry\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -63,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

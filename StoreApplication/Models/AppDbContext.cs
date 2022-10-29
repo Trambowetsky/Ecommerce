@@ -15,6 +15,7 @@ namespace StoreApplication.Models
         public DbSet<ProductPhoto> ProductPhotos { get; set; }
         public DbSet<MainInfo> MainInfos { get; set; }
         public DbSet<AdministrationLevel> AdministrationLevels { get; set; }
+        
         public AppDbContext(DbContextOptions<AppDbContext> options)
             : base(options)
         {
