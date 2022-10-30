@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\depry\\source\\repos\\Ecommerce\\Ecommerce\\StoreApplication\\StoreApplication.csproj": {}
+    "C:\\Users\\depry\\source\\repos\\Ecommerce\\StoreApplication\\StoreApplication.csproj": {}
   },
   "projects": {
-    "C:\\Users\\depry\\source\\repos\\Ecommerce\\Ecommerce\\StoreApplication\\StoreApplication.csproj": {
+    "C:\\Users\\depry\\source\\repos\\Ecommerce\\StoreApplication\\StoreApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\depry\\source\\repos\\Ecommerce\\Ecommerce\\StoreApplication\\StoreApplication.csproj",
+        "projectUniqueName": "C:\\Users\\depry\\source\\repos\\Ecommerce\\StoreApplication\\StoreApplication.csproj",
         "projectName": "StoreApplication",
-        "projectPath": "C:\\Users\\depry\\source\\repos\\Ecommerce\\Ecommerce\\StoreApplication\\StoreApplication.csproj",
+        "projectPath": "C:\\Users\\depry\\source\\repos\\Ecommerce\\StoreApplication\\StoreApplication.csproj",
         "packagesPath": "C:\\Users\\depry\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\depry\\source\\repos\\Ecommerce\\Ecommerce\\StoreApplication\\obj\\",
+        "outputPath": "C:\\Users\\depry\\source\\repos\\Ecommerce\\StoreApplication\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

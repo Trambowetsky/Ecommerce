@@ -10,8 +10,9 @@ namespace StoreApplication.Models
     {
         public Guid Id { get; set; }
         public string ShopName { get; set; }
-        public byte[] ShopCover{ get; set; }
+        public byte[] ShopCover { get; set; }
         public byte[] ShopLogo { get; set; }
         public string ShopDescription { get; set; }
+        public string ShopCurrency { get; set; }
     }
 }

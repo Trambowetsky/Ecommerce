@@ -10,5 +10,6 @@ namespace StoreApplication.Models
     {
         public PageViewModel PageViewModel { get; set; }
         public IEnumerable<ProductModel> Models { get; set; }
+        public MainInfo ProjectSettings { get; set; }
     }
 }

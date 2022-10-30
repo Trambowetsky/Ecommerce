@@ -25,13 +25,15 @@ namespace StoreApplication.Controllers
         public async Task<IActionResult> Index(int page = 1)
         {
             IQueryable<ProductModel> source = context.ProductModels.Select(x => x);
+            MainInfo shopInfo = context.MainInfos.FirstOrDefault();
             var count = await source.CountAsync();
             List<ProductModel> items = await source.Skip((page - 1) * pageSize).Take(pageSize).ToListAsync();
             var pageViewModel = new PageViewModel(count, page, pageSize);
             var viewModel = new IndexViewModel
             {
                 PageViewModel = pageViewModel,
-                Models = items
+                Models = items,
+                ProjectSettings = shopInfo
             };
             return View(viewModel);
         }

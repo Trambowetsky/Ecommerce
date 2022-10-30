@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UZE79y8VdQ26YbMNdACgR1IVxLg1yZ+eomZ3cheeiRt8U+18QTIOJlHZu4wMnyOUkcerVFmvGtSvTuTj3cQy7A==",
+  "dgSpecHash": "Djq6OObsyJ7eEDGw3DkVAtTeVMfGmxRTBe6LBS+7kCAKM03XUZxz7H4ycnWlNu5xKXdyOcpMQQzYQ89lZBIzWw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\depry\\source\\repos\\Ecommerce\\Ecommerce\\StoreApplication\\StoreApplication.csproj",
+  "projectFilePath": "C:\\Users\\depry\\source\\repos\\Ecommerce\\StoreApplication\\StoreApplication.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\depry\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\depry\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
