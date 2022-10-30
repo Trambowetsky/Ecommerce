@@ -11,9 +11,15 @@ namespace StoreApplication.Models
     {
         public Guid Id { get; set; }
         [Required]
-        public string Login { get; set; }
+        public string Email { get; set; }
+        public string Surname { get; set; }
+        public string Name { get; set; }
+        public Sex UserSex { get; set; }
+        public DateTime BirthDate { get; set; }
         [Required]
         [DataType(DataType.Password)]
         public string Password { get; set; }
+
+        public DateTime CreatedOn { get; set; }
     }
 }

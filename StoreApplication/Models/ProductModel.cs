@@ -12,9 +12,11 @@ namespace StoreApplication.Models
         public string Name { get; set; }
         public string Description { get; set; }
         public decimal Price { get; set; }
+        public string Manufacturer { get; set; }
         public decimal DiscountPrice { get; set; }
         public int DiscountPercentage { get; set; }
         public bool IsNew { get; set; }
+        public OriginCountry Country { get; set; }
         public ProductCategory Category { get; set; }
         public List<ProductTag> Tags { get; set; }
 
