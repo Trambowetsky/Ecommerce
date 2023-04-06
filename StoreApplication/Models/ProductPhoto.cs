@@ -11,6 +11,7 @@ namespace StoreApplication.Models
         public Guid Id { get; set; }
         public ProductModel ProductId { get; set; }
         public byte[] Image { get; set; }
+        public string ImageMimeType { get; set; }
         public bool IsCoverImg { get; set; }
     }
 }

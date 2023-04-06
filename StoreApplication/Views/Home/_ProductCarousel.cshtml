@@ -1,0 +1,16 @@
+﻿@model IndexViewModel
+@{
+    ViewData["Title"] = "Home Page";
+    string areArrowsShown = Model.Models.Count() > 4 ? "" : "invisible";
+}
+<section class="product">
+    <h2 class="product-category">products carousel</h2>
+    <button class="pre-btn @areArrowsShown"><img src="/img/arrow.png" alt=""></button>
+    <button class="nxt-btn @areArrowsShown"><img src="/img/arrow.png" alt=""></button>
+    <div class="product-container">
+            @foreach (ProductModel pm in Model.Models)
+            {
+                await Html.RenderPartialAsync("_ProductCard", new ProductCardModel() { Product = @pm, ProjectSettings = @Model.ProjectSettings });
+            }
+    </div>
+</section>

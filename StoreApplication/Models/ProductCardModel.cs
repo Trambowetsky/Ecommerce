@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace StoreApplication.Models
 {
-    public class Sex
+    public class ProductCardModel
     {
-        public Guid Id { get; set; }
-        public string Name { get; set; }
-        public Localization SexLocalization { get; set; }
+        public MainInfo ProjectSettings { get; set; }
+        public ProductModel Product{ get; set; }
     }
 }

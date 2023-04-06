@@ -5,32 +5,14 @@
     string hasNextPage = Model.PageViewModel.HasNextPage ? "" : "disabled";
 }
 
+@await Html.PartialAsync("_ProductCarousel", new IndexViewModel() { Models = Model.Models, PageViewModel = Model.PageViewModel, ProjectSettings = Model.ProjectSettings })
 <section class="section-products">
     <div class="container">
-        <div class="row justify-content-center text-center">
-        </div>
         <div class="row">
-            @foreach (ProductModel pm in Model.Models) {
-                <div class="col-md-6 col-lg-4 col-xl-3">
-                    <div id="product-1" class="single-product">
-                        <div class="part-1">
-                            @if (pm.IsNew) {
-                                <span class="new">new</span>
-                            }
-                            <ul>
-                                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                                <li><a href="#"><i class="fas fa-heart"></i></a></li>
-                                <li><a href="#"><i class="fas fa-expand"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="part-2">
-                            <h3 class="product-title">@pm.Name</h3>
-                            <h4 class="product-price">@pm.Price @Model.ProjectSettings.ShopCurrency</h4>
-                        </div>
-                    </div>
-                </div>
+            @foreach (ProductModel pm in Model.Models)
+            {
+                await Html.RenderPartialAsync("_ProductCard", new ProductCardModel() { Product = @pm, ProjectSettings = @Model.ProjectSettings });
             }
-            
         </div>
     </div>
 </section>
@@ -39,13 +21,13 @@
    asp-route-page="@(Model.PageViewModel.PageNumber - 1)"
    class="btn btn-outline-dark @hasPreviousPage">
     <i class="glyphicon glyphicon-chevron-left"></i>
-    Назад
+    Previous
 </a>
 
 <a asp-action="Index"
    asp-route-page="@(Model.PageViewModel.PageNumber + 1)"
    class="btn btn-outline-dark @hasNextPage">
-    Вперед
+    Next
     <i class="glyphicon glyphicon-chevron-right"></i>
 </a>
 

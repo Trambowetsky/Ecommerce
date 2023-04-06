@@ -204,3 +204,5 @@ C:\Users\depry\source\repos\Ecommerce\StoreApplication\obj\Debug\net5.0\StoreApp
 C:\Users\depry\source\repos\Ecommerce\StoreApplication\obj\Debug\net5.0\ref\StoreApplication.dll
 C:\Users\depry\source\repos\Ecommerce\StoreApplication\obj\Debug\net5.0\StoreApplication.pdb
 C:\Users\depry\source\repos\Ecommerce\StoreApplication\obj\Debug\net5.0\StoreApplication.genruntimeconfig.cache
+C:\Users\depry\source\repos\Ecommerce\StoreApplication\obj\Debug\net5.0\Razor\Views\Home\_ProductCard.cshtml.g.cs
+C:\Users\depry\source\repos\Ecommerce\StoreApplication\obj\Debug\net5.0\Razor\Views\Home\_ProductCarousel.cshtml.g.cs

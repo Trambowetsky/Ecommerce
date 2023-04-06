@@ -37,7 +37,6 @@ namespace StoreApplication.Controllers
             };
             return View(viewModel);
         }
-
         public IActionResult Privacy()
         {
             return View();

@@ -1,0 +1,24 @@
+﻿@model ProductCardModel
+
+    <div class="product-card">
+        <div class="product-image">
+            @if (Model.Product.IsNew)
+            {
+                <span class="discount-tag">new</span>
+            }
+            <img src="/img/card1.jpg" class="product-thumb" alt="">
+            <button class="card-btn">add to cart</button>
+        </div>
+        <div class="product-info">
+            <h4 class="product-brand">@Model.Product.Name</h4>
+            <p class="product-short-description">a short line about the cloth..</p>
+            @if (Model.Product.DiscountPrice != 0)
+            {
+                <span class="price">@Model.ProjectSettings.ShopCurrency @Model.Product.DiscountPrice</span><span class="actual-price">@Model.ProjectSettings.ShopCurrency @Model.Product.Price</span>
+            }
+            else {
+                <span class="price">@Model.ProjectSettings.ShopCurrency @Model.Product.Price</span>
+            }
+
+        </div>
+    </div>

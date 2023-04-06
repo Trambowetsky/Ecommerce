@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -39,7 +40,14 @@ namespace StoreApplication.Models
             InitDefaultAdminUser();
             InitDefaultProduct();
         }
-
+        public FileContentResult GetImage(Guid productId)
+        {
+            var prodPhoto = ProductPhotos.FirstOrDefault(p => p.ProductId.Id == productId && p.IsCoverImg == true);
+            if (prodPhoto.Image != null && prodPhoto.ImageMimeType != null) {
+                return new FileContentResult(prodPhoto.Image, prodPhoto.ImageMimeType);
+            }
+            return null;
+        }
         protected void InitDefaultAdminLevels()
         {
             AdministrationLevels.AddRange(
